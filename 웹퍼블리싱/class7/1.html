@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 500px;
+            background: aqua;
+        }
+        .img_cha {
+            position: absolute;
+            left: 170px;
+            bottom: 35px;
+            width: 160px;
+            height: 160px;
+            background: url(img_loading.svg) no-repeat;
+            animation:jump .5s cubic-bezier(.17,.67,.32,.99) infinite alternate;
+              z-index: 2;
+        }
+        @keyframes jump {
+        0% {bottom:35px;}
+        100% {bottom:140px;}
+        }
+        .img_shadow {
+            width: 100px;
+            height: 20px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, .5);
+            position: absolute;
+            left: 200px;
+            bottom: 30px;
+            animation: shadow .5s cubic-bezier(0.06, 0.65, 0.36, 1) infinite alternate;
+        }
+        @keyframes shadow {
+            0% {transform: scale(1);background: rgba(0, 0, 0, .5);}
+            100% {transform: scale(.6);background: rgba(0, 0, 0, .2);}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="Loading">
+        <div class="img_cha"></div>
+        <div class="img_shadow"></div>
+    </div>
+</body>
+</html>

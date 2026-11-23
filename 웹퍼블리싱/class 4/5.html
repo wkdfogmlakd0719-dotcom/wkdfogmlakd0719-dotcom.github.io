@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #wrap {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            background: rgb(160, 255, 250);
+        }
+        .face {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+             transform: translate(-50%, -50%); 
+            width: 250px;
+            height: 230px;
+            background: rgb(255, 211, 211);
+            border: 10px solid rgb(255, 211, 211);
+            border-radius: 50%;
+            z-index: 1
+        }
+        .eyes {
+            position: absolute;
+            top: 50%;
+            width: 40px;
+            height: 38px;
+            background: #000;
+            border-radius: 50%;
+            z-index: 3
+        }
+        .eyes.left {
+            left: 57px;
+            z-index: 3
+
+        }
+        .eyes.right{
+            right: 57px;
+            z-index: 3
+
+        }
+        .eyes.right1{
+            position: absolute;
+            left: 65px;
+            top: 117px;
+            width: 24px;
+            height: 19px;
+            background: #fff;
+            border-radius: 50%;
+            z-index: 3
+        }
+          .eyes.right2{
+            position: absolute;
+            left: 161px;
+            top: 117px;
+            width: 24px;
+            height: 19px;
+            background: #fff;
+            border-radius: 50%;
+            z-index: 3
+        }
+           .eyes.right3{
+             position: absolute;
+    top: 127px;
+    left: 65px;
+    width: 23px;
+    height: 15px;
+    background: transparent;
+    border-bottom: 3px solid #fff;
+    border-radius: 0 0 40% 40%;
+    z-index: 3
+        }
+           .eyes.right4{
+                   position: absolute;
+    top: 127px;
+    left: 162px;
+    width: 23px;
+    height: 15px;
+    background: transparent;
+    border-bottom: 3px solid #fff;
+    border-radius: 0 0 40% 40%;
+    z-index: 3
+        }
+        .nose{
+            position: absolute;
+            bottom: 65px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+         
+            background: black;
+            z-index: 3;
+        }
+      .mouth.left{
+    position: absolute;
+    bottom: 64px;
+    left: 104px;
+    width: 23px;
+    height: 15px;
+    background: transparent;
+    border-bottom: 4px solid #000;
+    border-radius: 0 0 50% 50%;
+    z-index: 3
+}
+.mouth.right {
+    position: absolute;
+    bottom: 64px;
+    left: 123px;
+    width: 23px;
+    height: 15px;
+    background: transparent;
+    border-bottom: 4px solid #000;
+    border-radius: 0 0 50% 50%;
+    z-index: 3
+}
+.mouth.bottom {
+    position: absolute;
+    bottom: 56px;
+    left: 122px;
+    width: 7px;
+    height: 3px;
+    background: transparent;
+    border-bottom: 3px solid #000;
+    border-radius: 50%;
+    z-index: 3
+}
+.snsTjq1 {
+    position: absolute;
+    top: 86px;
+    left: 66px;
+    width: 20px;
+    height: 5px;
+    background: transparent;
+    border-bottom: 4px solid #000;
+    border-radius: 20%;
+     transform: rotate(9deg);
+     z-index: 3
+}
+.snsTjq2 {
+    position: absolute;
+    top: 79px;
+    left: 66px;
+    width: 20px;
+    height: 5px;
+    background: transparent;
+    border-bottom: 4px solid #000;
+    border-radius: 20%;
+     transform: rotate(9deg);
+     z-index: 3
+}
+.snsTjq3 {
+    position: absolute;
+    top: 86px;
+    left: 160px;
+    width: 20px;
+    height: 5px;
+    background: transparent;
+    border-bottom: 4px solid #000;
+    border-radius: 20%;
+     transform: rotate(-9deg);
+     z-index: 3
+}
+.snsTjq4 {
+    position: absolute;
+    top: 79px;
+    left: 160px;
+    width: 20px;
+    height: 5px;
+    background: transparent;
+    border-bottom: 4px solid #000;
+    border-radius: 20%;
+     transform: rotate(-9deg);
+     z-index: 3
+}
+.semicircle {
+            position: absolute;
+              top: 50%;
+            left: 50%;
+             transform: translate(-50%, -50%); 
+            width: 250px;
+            height: 230px;
+    background: rgb(255, 136, 136);
+    border: 10px solid rgb(255, 136, 136);
+    border-radius: 50%;
+    clip-path: inset(0 0 65% 0);
+    z-index: 2
+}
+.dd1 {
+    position: absolute;
+    top: -23px;
+    left: 107px;
+    width: 20px;
+    height: 5px;
+    background: transparent;
+    border-bottom: 4px solid #000;
+    border-radius: 20%;
+     transform: rotate(60deg);
+     z-index: 3
+}
+.dd2 {
+    position: absolute;
+    top: -23px;
+    left: 112px;
+    width: 20px;
+    height: 5px;
+    background: transparent;
+    border-bottom: 4px solid #000;
+    border-radius: 20%;
+     transform: rotate(-60deg);
+     z-index: 3
+}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="face">
+            <div class="eyes left"></div>
+            <div class="eyes right"></div>
+            <div class="nose"></div>
+            <div class="mouth left"></div>
+            <div class="mouth right"></div>
+            <div class="eyes right1"></div>
+            <div class="eyes right2"></div>
+            <div class="eyes right3"></div>
+            <div class="eyes right4"></div>
+             <div class="mouth bottom"></div>
+             <div class="snsTjq1"></div>
+             <div class="snsTjq2"></div>
+             <div class="snsTjq3"></div>
+             <div class="snsTjq4"></div>
+             <div class="semicircle"></div>
+             <div class="dd1"></div>
+             <div class="dd2"></div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+    
+</body>
+</html>

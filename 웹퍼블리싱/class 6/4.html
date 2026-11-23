@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ham {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 100px;
+            background: rgb(222, 11, 46);
+            border-radius: 12px;
+        }
+        .ham div {
+            position: absolute;
+            left: 20px;
+            width: 60px;
+            height: 10px;
+            background: #fff;
+        }
+        .top {
+            top: 25px;
+        }
+        .ham:hover .top {
+            animation: hamburger2 .5s linear forwards;
+        }
+        .middle {
+            top: 45px;
+        }
+        .ham:hover .middle {
+            animation: hamburger1 .5s linear forwards;
+        }
+        .bottom {
+            top: 65px;
+        }
+        .ham:hover .bottom {
+            animation: hamburger3 .5s linear forwards;
+        }
+        @keyframes hamburger1 {
+            from {
+                left: 20px;
+                opacity: 1;
+            }
+            to {
+                left: -100%;
+                opacity: 0;
+            }
+        }
+        @keyframes hamburger2 {
+            to {
+                transform: rotate(-45deg);
+                top: 45px;
+            }
+        }
+        @keyframes hamburger3 {
+            to {
+                transform: rotate(45deg);
+                top: 45px;
+            }
+
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="ham">
+      <div class="top"></div>
+      <div class="middle"></div>
+      <div class="bottom"></div>
+    </div>
+
+</body>
+</html>

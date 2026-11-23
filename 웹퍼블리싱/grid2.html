@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            grid-template-rows: repeat(3, 100px);
+            grid-template-areas: 
+             'a a b'
+             'a a b'
+             'c d d'
+            ;
+        }
+        .grid li {
+            background: pink;
+            border: 1px solid #fff;
+        }
+        .grid li:nth-child(1) {
+            grid-area: a;
+        }
+        .grid li:nth-child(2) {
+            grid-area: b;
+        }
+        .grid li:nth-child(3) {
+            grid-area: c;
+        }
+        .grid li:nth-child(4) {
+            grid-area: d;
+        }
+    </style>
+</head>
+<body>
+    <ul class="grid">
+        <li>a1구역</li>
+        <li>b2구역</li>
+        <li>c3구역</li>
+        <li>d4구역</li>
+    </ul>
+</body>
+</html>
